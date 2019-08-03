@@ -37,7 +37,7 @@ char incomingData[MAX_DATA_LENGTH];
 
 // change the name of the port with the port name of your computer
 // must remember that the backslashes are essential so do not remove them
-char *port = "\\\\.\\COM3";
+char port[] = "\\\\.\\COM3";
 
 int main(){
 	SerialPort arduino(port);
